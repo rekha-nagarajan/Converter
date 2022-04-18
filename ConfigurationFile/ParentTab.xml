@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ParentTab>
+	<Parent Id="1" Name='Response' DisplayValue ='Response'/>
+	<Parent Id="2" Name='APDU' DisplayValue='APDU'/>
+    <Parent Id="3" Name='BERTLV' DisplayValue='BER-TLV'/>			
+</ParentTab>

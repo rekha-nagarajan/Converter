@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ByteDiscretion>
+	<Tag Name ="AIP" Id="82">
+		<Byte Name ="Byte1">
+			<Bit Position="0" ifTrue="RFU" />
+			<Bit Position="1" ifTrue="SDA supported" />
+			<Bit Position="2" ifTrue="DDA supported" />
+			<Bit Position="3" ifTrue="Cardholder verification is  supported" />
+			<Bit Position="4" ifTrue="Terminal risk management is to be performed" />
+			<Bit Position="5" ifTrue="Issuer authentication is supported" />
+			<Bit Position="6" ifTrue="RFU" />
+			<Bit Position="7" ifTrue="CDA supported" />
+		</Byte>
+		<Byte Name ="Byte2">
+			<Bit Position="0" ifTrue="Reserved for use by the EMV Contactless Specifications" />
+			<Bit Position="1" ifTrue="RFU" />
+			<Bit Position="2" ifTrue="RFU" />
+			<Bit Position="3" ifTrue="RFU" />
+			<Bit Position="4" ifTrue="RFU" />
+			<Bit Position="5" ifTrue="RFU" />
+			<Bit Position="6" ifTrue="RFU" />
+			<Bit Position="7" ifTrue="RFU" />
+		</Byte>
+	</Tag>
+	<Tag Name ="TVR" Id="95">
+		<Byte Name ="Byte1">
+			<Bit Position="0" ifTrue="Offline data authentication was not performed " />
+			<Bit Position="1" ifTrue="SDA failed" />
+			<Bit Position="2" ifTrue="ICC data missing" />
+			<Bit Position="3" ifTrue="Card appears on terminal exception file 22" />
+			<Bit Position="4" ifTrue="DDA failed" />
+			<Bit Position="5" ifTrue="CDA failed" />
+			<Bit Position="6" ifTrue="RFU" />
+			<Bit Position="7" ifTrue="RFU" />
+		</Byte>
+		<Byte Name ="Byte2">
+			<Bit Position="0" ifTrue="ICC and terminal have different application versions" />
+			<Bit Position="1" ifTrue="Expired application" />
+			<Bit Position="2" ifTrue="Application not yet effective" />
+			<Bit Position="3" ifTrue="Requested service not allowed for card product" />
+			<Bit Position="4" ifTrue="New card" />
+			<Bit Position="5" ifTrue="RFU" />
+			<Bit Position="6" ifTrue="RFU" />
+			<Bit Position="7" ifTrue="RFU" />
+		</Byte>
+		<Byte Name ="Byte3">
+			<Bit Position="0" ifTrue="Cardholder verification was not successful" />
+			<Bit Position="1" ifTrue="Unrecognised CVM" />
+			<Bit Position="2" ifTrue="PIN Try Limit exceeded" />
+			<Bit Position="3" ifTrue="PIN entry required and PIN pad not present or not working" />
+			<Bit Position="4" ifTrue="PIN entry required, PIN pad present, but PIN was not entered" />
+			<Bit Position="5" ifTrue="Online PIN entered" />
+			<Bit Position="6" ifTrue="RFU" />
+			<Bit Position="7" ifTrue="RFU" />
+		</Byte>
+		<Byte Name ="Byte4">
+			<Bit Position="0" ifTrue="Transaction exceeds floor limit" />
+			<Bit Position="1" ifTrue="Lower consecutive offline limit exceeded" />
+			<Bit Position="2" ifTrue="Upper consecutive offline limit exceeded" />
+			<Bit Position="3" ifTrue="Transaction selected randomly for online processing" />
+			<Bit Position="4" ifTrue="Merchant forced transaction online" />
+			<Bit Position="5" ifTrue="RFU" />
+			<Bit Position="6" ifTrue="RFU" />
+			<Bit Position="7" ifTrue="RFU" />
+		</Byte>
+		<Byte Name ="Byte5">
+			<Bit Position="0" ifTrue="Default TDOL used" />
+			<Bit Position="1" ifTrue="Issuer authentication failed" />
+			<Bit Position="2" ifTrue="Script processing failed before final GENERATE AC" />
+			<Bit Position="3" ifTrue="Script processing failed after final GENERATE AC" />
+			<Bit Position="4" ifTrue="RFU" />
+			<Bit Position="5" ifTrue="RFU" />
+			<Bit Position="6" ifTrue="RFU" />
+			<Bit Position="7" ifTrue="RFU" />
+		</Byte>
+	</Tag>
+
+	<Tag Name ="TSI" Id="9B">
+		<Byte Name ="Byte1">
+			<Bit Position="0" ifTrue="Offline data authentication was performed" />
+			<Bit Position="1" ifTrue="Cardholder verification was performed" />
+			<Bit Position="2" ifTrue="Card risk management was performed" />
+			<Bit Position="3" ifTrue="Issuer authentication was performed" />
+			<Bit Position="4" ifTrue="Terminal risk management was performed" />
+			<Bit Position="5" ifTrue="Script processing was performed" />
+			<Bit Position="6" ifTrue="RFU" />
+			<Bit Position="7" ifTrue="RFU" />
+		</Byte>
+
+		<Byte Name ="Byte2">
+			<Bit Position="0" ifTrue="RFU" />
+			<Bit Position="1" ifTrue="RFU" />
+			<Bit Position="2" ifTrue="RFU" />
+			<Bit Position="3" ifTrue="RFU" />
+			<Bit Position="4" ifTrue="RFU" />
+			<Bit Position="5" ifTrue="RFU" />
+			<Bit Position="6" ifTrue="RFU" />
+			<Bit Position="7" ifTrue="RFU" />
+		</Byte>
+	</Tag>
+	<Tag Name ="AUC" Id="9F07">
+	<Byte Name ="Byte1">
+		<Bit Position="0" ifTrue="Valid for domestic cash transaction" />
+		<Bit Position="1" ifTrue="Valid for international cash transactions" />
+		<Bit Position="2" ifTrue="Valid for domestic goods" />
+		<Bit Position="3" ifTrue="Valid for international goods" />
+		<Bit Position="4" ifTrue="Valid for domestic services" />
+		<Bit Position="5" ifTrue="Valid for international services" />
+		<Bit Position="6" ifTrue="Valid at ATMs" />
+		<Bit Position="7" ifTrue="Valid at terminals other than ATMs" />
+	</Byte>
+
+	<Byte Name ="Byte2">
+		<Bit Position="0" ifTrue="Domestic cashback allowed" />
+		<Bit Position="1" ifTrue="International cashback allowed" />
+		<Bit Position="2" ifTrue="RFU" />
+		<Bit Position="3" ifTrue="RFU" />
+		<Bit Position="4" ifTrue="RFU" />
+		<Bit Position="5" ifTrue="RFU" />
+		<Bit Position="6" ifTrue="RFU" />
+		<Bit Position="7" ifTrue="RFU" />
+	</Byte>
+</Tag>
+</ByteDiscretion>

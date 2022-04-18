@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="hextobin_wpf.UserCtl.BitParserCtl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:hextobin_wpf.UserCtl"
+             mc:Ignorable="d" 
+             d:DesignHeight="1400" d:DesignWidth="700">
+
+
+    <Grid Margin="20" >
+        <TextBlock x:Name="txtByte"  />
+        <Border Margin="0,20,0,0" BorderBrush="Green" BorderThickness="1" Width="350" Height="190">
+            <StackPanel x:Name="PnlCheck"   Orientation="Vertical"  Margin="0,9,0,0"/>
+        </Border>
+        </Grid>
+  
+    
+</UserControl>
